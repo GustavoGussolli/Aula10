@@ -11,12 +11,11 @@
             $this->forca = $f;
         }
 
-        public function getForcaTotal(int $forcaMago){
-
-            $forcaTotal = $forcaMago * (1 + $this->forca / 100);
-            return $forcaTotal;
-
+        public function getForcaTotal($forcaMago){
+            
+            return $forcaMago + (($forcaMago/100) * $this->forca);
         }
+        
 
         public function __toString(){
 

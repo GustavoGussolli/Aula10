@@ -5,10 +5,7 @@
     class Mago{
 
         protected string $nome;
-        protected Poder $poder;
-
-        
-
+        protected Poder $poder;  
 
         /**
          * Get the value of nome

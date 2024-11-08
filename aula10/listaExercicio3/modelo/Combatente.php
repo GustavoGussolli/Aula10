@@ -9,7 +9,7 @@
         public function lancarPoder(){
 
             return "O mago " . $this->nome . ", do tipo Combatente, possui força de " . $this->getForcaDeAtaque() . 
-            " e lançou o poder " . $this->poder->getDescricao() . " com força total de " . $this->poder->getForcaTotal() . "\n";
+            " e lançou o poder " . $this->poder->getDescricao() . " com força total de " . $this->poder->getForcaTotal($this->getForcaDeAtaque()) . "\n";
             
         }
 

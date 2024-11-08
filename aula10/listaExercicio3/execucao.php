@@ -14,8 +14,6 @@
     array_push($poderes, $poder1, $poder2, $poder3, $poder4);
     $magos = array();
 
-
-
     do{
 
         echo "-----------Menu-----------\n";
@@ -25,7 +23,8 @@
         echo "--------------------------\n";
         echo "|    3 - LISTAR MAGOS     | \n";
         echo "--------------------------\n";
-
+        echo "|    0 - SAIR             | \n";
+        echo "--------------------------\n";
 
         $escolha = readline("Informe oque fazer: ");
 
@@ -68,10 +67,10 @@
                     $poderDoMago = readline("Informe qual poder: ");
 
                     if($poderDoMago == 1){
-                        $mago->setPoder($poderes[0]);
+                        $mago->setPoder($poderes[2]);
                     }
                     if($poderDoMago == 2){
-                        $mago->setPoder($poderes[1]);
+                        $mago->setPoder($poderes[3]);
                     }
 
                     array_push($magos, $mago);
